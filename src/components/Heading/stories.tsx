@@ -3,7 +3,16 @@ import Heading from '.'
 
 export default {
   title: 'Heading',
-  component: Heading
+  component: Heading,
+  argTypes: {
+    children: {
+      type: 'string'
+    }
+  }
 } as Meta
 
-export const Default: StoryObj = {}
+export const Default: StoryObj = {
+  args: {
+    children: 'Most Populars'
+  }
+}
