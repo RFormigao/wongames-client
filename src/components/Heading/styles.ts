@@ -1,7 +1,11 @@
 import styled, { css, DefaultTheme } from 'styled-components'
 import media from 'styled-media-query'
 
-import { HeadingProps } from '.'
+type WrapperProps = {
+  color?: 'white' | 'black'
+  $lineLeft?: boolean
+  $lineBottom?: boolean
+}
 
 const wrapperModifiers = {
   lineLeft: (theme: DefaultTheme) => css`
@@ -24,7 +28,7 @@ const wrapperModifiers = {
   `
 }
 
-export const Wrapper = styled.h2<HeadingProps>`
+export const Wrapper = styled.h2<WrapperProps>`
   ${({ theme, color, $lineLeft, $lineBottom }) => css`
     color: ${theme.colors[color!]};
     font-size: ${theme.font.sizes.xlarge};
