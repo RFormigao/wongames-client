@@ -6,7 +6,7 @@ type WrapperProps = {
   $lineLeft?: boolean
   $lineBottom?: boolean
   $size: 'small' | 'medium'
-  $lineColor?: 'primary' | 'secondary'
+  $lineColor: 'primary' | 'secondary'
 }
 
 const wrapperModifiers = {
