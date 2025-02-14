@@ -21,3 +21,12 @@ export const withIcon: StoryObj = {
     icon: <AddShoppingCart />
   }
 }
+
+export const asLink: StoryObj = {
+  args: {
+    size: 'large',
+    children: 'Buy Now',
+    as: 'a',
+    href: '/link'
+  }
+}
