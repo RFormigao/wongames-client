@@ -12,7 +12,12 @@ const defaultArgs = {
 export default {
   title: 'Banner',
   component: Banner,
-  args: defaultArgs
+  args: defaultArgs,
+  argTypes: {
+    ribbon: {
+      type: 'string'
+    }
+  }
 } as Meta<BannerProps>
 
 export const Default: StoryObj<BannerProps> = {
