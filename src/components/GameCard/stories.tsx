@@ -4,7 +4,7 @@ import GameCard, { GameCardProps } from '.'
 const defaultArgs = {
   title: `Population Zero`,
   developer: `Other Ocean`,
-  img: '/img/project-winter.png',
+  img: '/img/storybook/project-winter.png',
   price: '$215,00',
   promotionalPrice: 'R$ 15,00'
 }

@@ -9,7 +9,7 @@ const props = {
   subtitle: `Come see John's new adventures`,
   buttonLabel: 'Buy Now',
   buttonLink: '/rdr2',
-  backgroundImage: '/img/red-dead-img.jpg'
+  backgroundImage: '/img/storybook/red-dead-img.jpg'
 }
 
 describe('<Highlight />', () => {

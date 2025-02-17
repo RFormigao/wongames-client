@@ -6,7 +6,7 @@ const defaultArgs = {
   subtitle: `Come see John's new adventures`,
   buttonLabel: 'Buy Now',
   buttonLink: '/rdr2',
-  backgroundImage: '/img/red-dead-img.jpg'
+  backgroundImage: '/img/storybook/red-dead-img.jpg'
 }
 
 export default {
@@ -31,6 +31,6 @@ export const WithFloatImage: StoryObj<HighlightProps> = {
   ),
   args: {
     ...defaultArgs,
-    floatImage: '/img/red-dead-float.png'
+    floatImage: '/img/storybook/red-dead-float.png'
   }
 }
