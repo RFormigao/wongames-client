@@ -1,3 +1,5 @@
-export default function Home() {
-  return <div>Won Games</div>
+import Home from '@/templates/Home'
+
+export default function Index() {
+  return <Home />
 }
