@@ -22,5 +22,6 @@ module.exports = {
     '^@/(.*)$': '<rootDir>/src/$1',
     '^styled-components':
       'styled-components/dist/styled-components.browser.cjs.js'
-  }
+  },
+  prettierPath: require.resolve('prettier-2')
 }
