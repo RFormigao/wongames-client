@@ -45,7 +45,7 @@ const Menu = ({ username }: MenuProps) => {
         </S.IconWrapper>
 
         <MediaMatch $greaterThan="medium">
-          {!!username && <Button>Sign in</Button>}
+          {!username && <Button>Sign in</Button>}
         </MediaMatch>
       </S.MenuGroup>
 
