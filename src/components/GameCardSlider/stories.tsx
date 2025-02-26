@@ -1,57 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react'
 import GameCardSlider, { GameCardSliderProps } from '.'
-
-const items = [
-  {
-    title: `Population Zero`,
-    developer: `Other Ocean`,
-    img: '/img/storybook/project-winter.png',
-    price: '$215,00',
-    promotionalPrice: 'R$ 15,00'
-  },
-  {
-    title: `Population Zero`,
-    developer: `Other Ocean`,
-    img: '/img/storybook/project-winter.png',
-    price: '$215,00',
-    promotionalPrice: 'R$ 15,00'
-  },
-  {
-    title: `Population Zero`,
-    developer: `Other Ocean`,
-    img: '/img/storybook/project-winter.png',
-    price: '$215,00',
-    promotionalPrice: 'R$ 15,00'
-  },
-  {
-    title: `Population Zero`,
-    developer: `Other Ocean`,
-    img: '/img/storybook/project-winter.png',
-    price: '$215,00',
-    promotionalPrice: 'R$ 15,00'
-  },
-  {
-    title: `Population Zero`,
-    developer: `Other Ocean`,
-    img: '/img/storybook/project-winter.png',
-    price: '$215,00',
-    promotionalPrice: 'R$ 15,00'
-  },
-  {
-    title: `Population Zero`,
-    developer: `Other Ocean`,
-    img: '/img/storybook/project-winter.png',
-    price: '$215,00',
-    promotionalPrice: 'R$ 15,00'
-  },
-  {
-    title: `Population Zero`,
-    developer: `Other Ocean`,
-    img: '/img/storybook/project-winter.png',
-    price: '$215,00',
-    promotionalPrice: 'R$ 15,00'
-  }
-]
+import items from './mock'
 
 export default {
   title: 'GameCardSlider',

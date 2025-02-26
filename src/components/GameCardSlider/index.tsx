@@ -1,3 +1,4 @@
+import { CustomArrowProps } from 'react-slick'
 import { ArrowBackIos as ArrowLeft } from '@styled-icons/material-outlined/ArrowBackIos'
 import { ArrowForwardIos as ArrowRight } from '@styled-icons/material-outlined/ArrowForwardIos'
 
@@ -5,6 +6,30 @@ import Slider, { SliderSettings } from '@/components/Slider'
 import GameCard, { GameCardProps } from '@/components/GameCard'
 
 import * as S from './styles'
+
+const NextArrow = ({
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  currentSlide,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  slideCount,
+  ...props
+}: CustomArrowProps) => (
+  <div {...props}>
+    <ArrowRight />
+  </div>
+)
+
+const PrevArrow = ({
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  currentSlide,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  slideCount,
+  ...props
+}: CustomArrowProps) => (
+  <div {...props}>
+    <ArrowLeft />
+  </div>
+)
 
 const settings: SliderSettings = {
   arrows: true,
@@ -41,8 +66,8 @@ const settings: SliderSettings = {
       }
     }
   ],
-  nextArrow: <ArrowRight aria-label="next games" />,
-  prevArrow: <ArrowLeft aria-label="previous games" />
+  nextArrow: <NextArrow aria-label="next games" />,
+  prevArrow: <PrevArrow aria-label="previous games" />
 }
 
 export type GameCardSliderProps = {
