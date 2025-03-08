@@ -5,7 +5,7 @@ type WrapperProps = {
   color?: 'white' | 'black'
   $lineLeft?: boolean
   $lineBottom?: boolean
-  $size: 'small' | 'medium'
+  $size: 'small' | 'medium' | 'huge'
   $lineColor: 'primary' | 'secondary'
 }
 
@@ -20,6 +20,10 @@ const wrapperModifiers = {
 
   medium: (theme: DefaultTheme) => css`
     font-size: ${theme.font.sizes.xlarge};
+  `,
+
+  huge: (theme: DefaultTheme) => css`
+    font-size: ${theme.font.sizes.huge};
   `,
 
   lineLeft: (theme: DefaultTheme, lineColor: LineColorProps) => css`
