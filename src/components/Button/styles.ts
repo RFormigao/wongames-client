@@ -1,7 +1,7 @@
 import styled, { css, DefaultTheme } from 'styled-components'
 import { darken } from 'polished'
 
-type WrapperProps = {
+export type WrapperProps = {
   size?: 'small' | 'medium' | 'large'
   $fullWidth?: boolean
   $hasIcon: boolean
