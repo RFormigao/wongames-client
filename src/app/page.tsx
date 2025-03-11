@@ -10,11 +10,11 @@ export default function Index() {
     newGames: gamesMock,
     mostPopularHighlight: highlightMock,
     mostPopularGames: gamesMock,
-    upcommingGames: gamesMock,
-    upcommingHighligth: highlightMock,
-    upcommingMoreGames: gamesMock,
+    upcomingGames: gamesMock,
+    upcomingHighlight: highlightMock,
+    upcomingMoreGames: gamesMock,
     freeGames: gamesMock,
-    freeHighligth: highlightMock
+    freeHighlight: highlightMock
   }
 
   return <Home {...props} />
