@@ -9,7 +9,7 @@ type WrapperProps = {
   $lineColor: 'primary' | 'secondary'
 }
 
-const wrapperModifiers = {
+export const wrapperModifiers = {
   small: (theme: DefaultTheme) => css`
     font-size: ${theme.font.sizes.medium};
 
