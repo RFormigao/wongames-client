@@ -8,6 +8,7 @@ module.exports = {
     '!src/lib/registry.tsx',
     '!src/types/**',
     '!src/**/stories.tsx',
+    '!src/**/mock.ts',
     '!src/pages/**/*.tsx',
     '!src/styles/**/*.ts'
   ],
